@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/App/App';
+import AppHook from 'components/App/AppHooK';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from './constants/theme';
 import './index.css';
@@ -8,7 +8,7 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <AppHook />
     </ThemeProvider>
   </React.StrictMode>
 );
